@@ -1,26 +1,35 @@
-import streamlit as st
-import google.generativeai as genai
-import PyPDF2
-import settings
-import time
+#Matheus Audibert
+#Resume_AI
+#Este projeto foi feita a partir da aulas da ALURA (Imersão DEV)
 
+import streamlit as st #Importa a biblioteca do STREAMLIT
+import google.generativeai as genai #Importa a biblioteca da GOOGLE.GENERATIVEAI
+import PyPDF2 #Importa a biblioteca do PYPDF2
+import time #Importa a biblioteca TIME
+import settings #Importa o aqruivo settings.py
 
+#função que gera o resumo do texto.
 def resume_texto (texto:str):
    
-    generation_config = {
-    "temperature": 0.2,
-    "top_p": 1,
-    "top_k": 0,
-    "max_output_tokens": 100000,
-    }
-    system_instruction = "Você é um ferramenta focada na construção de resumos. Sua função é fazer resumos conciso e claros, de diversos conteúdos."
-    model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
-                              generation_config=generation_config,
-                              system_instruction=system_instruction,
-                              safety_settings=settings.safety_settings)
+  #parâmetros do IA do Google
+  generation_config = {
+  "temperature": 0.2,
+  "top_p": 1,
+  "top_k": 0,
+  "max_output_tokens": 100000,
+  }
+
+  #instrução principal para a ia
+  system_instruction = "Você é um ferramenta focada na construção de resumos. Sua função é fazer resumos conciso e claros, de diversos conteúdos."
+  model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
+                                generation_config=generation_config,
+                                system_instruction=system_instruction,
+                                safety_settings=settings.safety_settings)
     
-    convo = model.start_chat(history=[
+  #início da conversa com a ia
+  convo = model.start_chat(history=[
                     {
+                    #treinameto da ia com few-shots prompting
                     "role": "user",
                     "parts": ["""Você é uma ferramenta de resumos de textos palavras ou termos. Determine do que se trata o documento geral e resuma-o.\n
                                 Sintetize as informações em um resumo bem formatado e fácil de ler, estruturado como um ensaio que as resuma de forma coesa.\n
@@ -42,6 +51,7 @@ def resume_texto (texto:str):
                                 """]
                     },
                     {
+                    #resposta que a ia deveria gerar para o propmt de treinanmento
                     "role": "model",
                     "parts": ["""Principais pontos a serem lembrados:\n\n
                                 Expansão Imperial: O Japão emergiu como uma potência imperial no início do século XX, buscando expandir seu domínio na Ásia e no Pacífico.\n\n
@@ -58,10 +68,12 @@ def resume_texto (texto:str):
                                 A Guerra do Japão, portanto, deixou um legado marcado por perdas humanas, devastação material e transformações sociais, que continuam a influenciar o Japão até os dias de hoje."""]
                     },
                     {
+                    #treinameto da ia com few-shots prompting
                     "role": "user",
                     "parts": [""""Quando há entradas sem muito contexto, como por exemplo, Gripe Espanhola, você deve redigir um Resumo sobre o conteúdo, seguindo as regras ditas."""]
                     },
                     {
+                    #resposta que a ia deveria gerar para o propmt de treinanmento
                     "role": "model",
                     "parts": [""""Principais pontos a serem lembrados:\n\n
                                 Origem e Propagação: A Gripe Espanhola foi uma pandemia de gripe que ocorreu em 1918-1919, durante o final da Primeira Guerra Mundial.\n\n
@@ -78,14 +90,20 @@ def resume_texto (texto:str):
                     ]           
                             )
     
-    convo.send_message(f"""Faça um resumo, sobre: \n\n{texto}. Incie com um título, informando que se trata de um resumo.""")
+  #construção do prompt para o usuário, contatenando o texto
+  convo.send_message(f"""Faça um resumo, sobre: \n\n{texto}. Incie com um título, informando que se trata de um resumo.""")
 
-    resposta_texto = convo.last.text
+  #resposta da IA para o prompt do usuário
+  resposta_texto = convo.last.text
 
-    return resposta_texto
+  #retorna a respota para a main
+  return resposta_texto
 
 
+#função que gera o resumo do PDF.
 def resume_pdf (conteudo:str):
+
+  #parâmetros do IA do Google
   generation_config = {
   "temperature": 0.2,
   "top_p": 1,
@@ -93,14 +111,17 @@ def resume_pdf (conteudo:str):
   "max_output_tokens": 100000,
   }
    
+  #instrução principal para a ia
   system_instruction = "Você é um ferramenta focada na construção de resumos. Sua função é fazer resumos conciso e claros de PDFs."
   model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
-                              generation_config=generation_config,
-                              system_instruction=system_instruction,
-                              safety_settings=settings.safety_settings)
+                                generation_config=generation_config,
+                                system_instruction=system_instruction,
+                                safety_settings=settings.safety_settings)
    
+  #início da conversa com a ia
   convo = model.start_chat(history=[
                     {
+                    #treinameto da ia com few-shots prompting
                     "role": "user",
                     "parts": ["""Você irá fazer resumos de textos NÃO formatados. Por isso deve ler os textos e extrair resumos fortadados, claros e concisos. Você deve funcionar da seguinte maneira. \n
                                 Usuário entra um texto não formatado:"\n
@@ -114,6 +135,7 @@ def resume_pdf (conteudo:str):
                                 práticos que permitem aos alunos aplicar imediatamente o conhecimento adquirido."""]
                     },
                     {
+                    #resposta que a ia deveria gerar para o propmt de treinanmento
                     "role": "model",
                     "parts": ["""Principais Pontos a Serem Lembrados:\n\n
                                 A Alura é uma plataforma brasileira de ensino online fundada em 2011.\n
@@ -126,11 +148,14 @@ def resume_pdf (conteudo:str):
                     },
                     ]
                             )
-    
+  
+  #construção do prompt para o usuário, contatenando o texto
   convo.send_message(f"""Faça um resumo sobre este texto: {conteudo}""")
 
+  #resposta da IA para o prompt do usuário
   resposta_pdf = convo.last.text
 
+  #retorna a respota para a main
   return resposta_pdf
 
 
