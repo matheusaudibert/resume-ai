@@ -173,14 +173,17 @@ def main():
         st.divider()
         st.write(conteudo)
 
-    API_KEY = st.text_input("Digite a chave da API 🔑")
-    genai.configure(api_key=API_KEY)
+    
+    chave_temp = st.text_input("Digite a chave da API 🔑")
+    
     
 
     if st.button("Salvar chave", type="secondary"):
-        if len(API_KEY) > 35:
-            if len(API_KEY) < 42:
+        if len(chave_temp) > 35:
+            if len(chave_temp) < 42:
                 st.write("✅ Tudo certo! Chave validada.")
+                API_KEY = chave_temp
+                genai.configure(api_key=API_KEY)
             else:
                 st.write("❌ Erro! Chave não localizada.")
         else:
