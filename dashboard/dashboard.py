@@ -158,6 +158,9 @@ def resume_pdf (conteudo:str):
   #retorna a respota para a main
   return resposta_pdf
 
+
+@st.cache_data
+
 #funcao que faz a leitura do pdf
 def ler_pdf(pdf):
   #comando que efetua o acesso ao pdf
@@ -175,7 +178,7 @@ def ler_pdf(pdf):
 
 #função principal
 def main():
-  
+
   st.set_page_config(layout="centered")
 
   with st.sidebar:
