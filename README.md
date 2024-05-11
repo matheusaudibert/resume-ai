@@ -95,7 +95,10 @@ A execução do código acima irá retonar a URL Local (localhost:XXXX). Cole-a 
 
 ## Observações
 
-- O **Resume AI** está em processo de desenvolvimento. Futuramente sugirão novas possibilidades, como, entrada de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros.
+- O **Resume AI** está em processo de desenvolvimento. Futuramente sugirão novas funcionalidades, como: 
+- Trabalhar com entradas de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros;
+- Possibilidade de alterar os parâmetros da intigência artificial, como temperatura, top p e top ;
+- Criar diferentes modelos de resumo que o usuáio pode selecionar.
   
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
   
