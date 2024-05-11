@@ -179,7 +179,7 @@ def main():
     
 
     if st.button("Salvar chave", type="secondary"):
-        if len(chave_temp) > 35:
+        if len(chave_temp) > 38:
             if len(chave_temp) < 42:
                 st.write("✅ Tudo certo! Chave validada.")
                 API_KEY = chave_temp
