@@ -40,7 +40,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 **Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
 
-2. **Cole sua API KEY**
+2. **Cole sua API KEY 🔑**
 
 Você deve inserir sua chave da API do Google AI studio para se conectar.
 
@@ -96,9 +96,15 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 
 Neste exemplo, esta sendo enviado um PDF contanto uma história fictícia sobre um garota chamado Matheus, que é um entusiasta da programação. O PDF contém **2670** caracteres, e poder ser visualizado [aqui](docs/exemplo_conto.pdf). 
 
-3. **Recebe a API KEY do usuário**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
+2. **Recebe a API KEY do usuário 🔑**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
 
-4. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir. 
+![Logo](docs/resume_ai_api_key.png)
+
+Aqui a ferramenta tentará validar a chave do usuário com o servidor do Google AI Studio.
+
+3. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir. 
+
+![Logo](docs/resume_ai_output.png)
 
 ## Observações
 
