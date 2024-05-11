@@ -229,8 +229,6 @@ def main():
     if len(chave_temp) == 39:
       API_KEY = chave_temp
       genai.configure(api_key=API_KEY)
-      st.write(chave_temp)
-      st.write(API_KEY)
       with st.spinner('Conectando-se aos servidores do Google...'):
         time.sleep(1.5)
       if pdf == texto:
@@ -246,6 +244,7 @@ def main():
             conteudo = resume_pdf(conteudo=conteudo)
           st.divider()
           st.write(conteudo)
+          st.divider()
 
         if texto is not None:
           with st.spinner('Lendo o texo...'):
@@ -257,6 +256,7 @@ def main():
             resposta_texto = resume_texto(texto = texto)
           st.divider()
           st.write(resposta_texto)
+          st.divider()
     else:
       st.markdown("❌ Ish, deu ruim! parece que sua chave não funcionou.")
       
