@@ -1,14 +1,11 @@
 import streamlit as st
 import google.generativeai as genai
 import PyPDF2
-import time
 import settings
+import time
 
 
-
-@st.cache_data
-
-def resume_texto (texto: str):
+def resume_texto (texto:str):
    
     generation_config = {
     "temperature": 0.2,
@@ -145,56 +142,21 @@ def ler_pdf(pdf):
     conteudo += leitor_pdf.pages[page_num].extract_text()
   return conteudo
 
-
-
-def main():
-    st.title("Resume AI ✍️")
-
-    input_method = st.radio("Selecione o método de entrada:", ('Enviar um documento (PDF)', 'Digitar texto, palavra ou termo'))
-
-    pdf = None
-    texto = None
-    
-    if input_method == 'Enviar um documento (PDF)':
-      pdf = st.file_uploader("Envie um documento", type=['pdf'])
-      time.sleep(3)
-
-
-    if input_method == 'Digitar texto, palavra ou termo':
-        texto = st.text_area("Digite um texto, palavra ou termo", "")
-        if texto:
-            resposta_texto = resume_texto(texto = texto)
-            st.divider()
-            st.write(resposta_texto)
-
-    if pdf is not None:
-        conteudo = ler_pdf(pdf)
-        conteudo = resume_pdf(conteudo=conteudo)
-        st.divider()
-        st.write(conteudo)
-
-    
-    chave_temp = st.text_input("Digite a chave da API 🔑")
-    
-    
-
-    if st.button("Salvar chave", type="secondary"):
-        if len(chave_temp) > 38:
-            if len(chave_temp) < 42:
-                st.write("✅ Tudo certo! Chave validada.")
-                API_KEY = chave_temp
-                genai.configure(api_key=API_KEY)
-            else:
-                st.write("❌ Erro! Chave não localizada.")
-        else:
-            st.write("❌ Erro! Chave não localizada.")
-
-    st.markdown('Gere sua chave [aqui!](https://aistudio.google.com/app/apikey)')
-
+def verificar_chave(chave_temp: str):
+  if len(chave_temp) == 39:
+    API_KEY = chave_temp
+    genai.configure(api_key=API_KEY)
+    st.write("✅ Tudo certo! Chave encontrada.")
+  else:
+    st.write("❌ Deu ruim! Chave não encontrada.")
       
-    st.button('Resumir (clique uma vez e espere)', type="primary")
+
   
-    with st.sidebar:
+def main():
+  st.set_page_config(layout="centered")
+
+  with st.sidebar:
+
         st.markdown("""
         ### Bem-vindo ao **Resume AI**! ✅
 
@@ -204,17 +166,71 @@ def main():
 
         #### Recursos:
 
-        - 📦 **Upload Simples** Os usuários podem enviar arquivos (PDFs) e gerarem resumos instataneamente. 
+        - 📦 **Upload Simples** Os usuários podem enviar arquivos (PDF, TXT, imagens) ou colar links de vídeos do YouTube para análise. 
         - 💡 **Resumos Instantâneos:** A IA do Google Generative permite gerar resumos precisos e rápidos do conteúdo fornecido.
         - 😃 **Visualização Amigável**: Explore seus resumos de forma organizada e fácil de entender.
-        - 📲 **Acesso em Qualquer Lugar**: Use o **Resume AI** aplicação em qualquer dispositivo com acesso à internet.
+        - 📲 **Acesso em Qualquer Lugar**: Use nossa aplicação em qualquer dispositivo com acesso à internet.
 
-        Junte-se ao **Resume AI** e libere o poder da inteligência artifical para acessar conhecimentos valiosos de forma instantânea. A revolução da informação começa aqui! 🌐🤿
+        Junte-se ao **Resume AI** e libere o poder da inteligência para acessar conhecimentos valiosos de forma instantânea. A revolução da informação começa aqui! 🌐🤿
 
         ##### Feito por: Matheus Audibert 👨‍💻
         ##### LinkedIn: [linkedin.com/in/matheusaudibert/](linkedin.com/in/matheusaudibert/) 
         ##### Github: [github.com/matheusaudibert](github.com/matheusaudibert)
         """)
+
+  st.title("Resume AI ✍️")
+
+  input_method = st.radio("Selecione o método de entrada:", ('Enviar um documento', 'Digitar texto, palavra ou termo'))
+
+  pdf = None
+  texto = None
+    
+  if input_method == 'Enviar um documento':
+    pdf = st.file_uploader("Envie um documento", type=['pdf'])
+
+
+  if input_method == 'Digitar texto, palavra ou termo':
+    texto = st.text_area("Digite um texto, palavra ou termo", "")
+        
+  chave_temp = st.text_input("Digite a chave da API 🔑")
+          
+  st.markdown('**Não tem uma chave?** Gere uma [aqui!](https://aistudio.google.com/app/apikey)')
+  
+  if st.button('Resumir (clique uma vez e espere)', type="primary"):
+    
+    with st.spinner('Verificando sua chave...'):
+      time.sleep(1.5)
+    if len(chave_temp) == 39:
+      with st.spinner('Conectando-se aos servidores do Google...'):
+        time.sleep(1.5)
+      if pdf == texto:
+        st.write("✋ Calma aí! Me envie algo para resumir.")
+      else:
+        if pdf is not None:
+          with st.spinner('Lendo o PDF...'):
+            time.sleep(1.5)
+          with st.spinner('Anotando os pontos principais...'):
+            conteudo = ler_pdf(pdf)
+          with st.spinner('Resumindo...'):
+            st.toast('Lembre-se, PDFs com conteúdos extensos levam mais tempos para serem resumidos!', icon='⚠️')
+            conteudo = resume_pdf(conteudo=conteudo)
+          st.divider()
+          st.write(conteudo)
+
+        if texto is not None:
+          with st.spinner('Lendo o texo...'):
+            time.sleep(1.5)
+          with st.spinner('Anotando os pontos principais...'):
+            time.sleep(2)
+          with st.spinner('Resumindo...'):
+            st.toast('Lembre-se, textos extensos levam mais tempos para serem resumidos!', icon='⚠️')
+            resposta_texto = resume_texto(texto = texto)
+          st.divider()
+          st.write(resposta_texto)
+    else:
+      st.markdown("❌ Ish, deu ruim! parece que sua chave não funcionou.")
+      
+    
 
 if __name__ == "__main__":
     main()
