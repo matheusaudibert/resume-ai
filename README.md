@@ -1,4 +1,4 @@
-# Resume AI ✍️: Resumos Automáticos com Inteligência Aritificial <span style="color:blue;">G</span> <span style="color:red;">o</span> <span style="color:yellow;">o</span> <span style="color:blue;">g</span> <span style="color:green;">e</span> <span style="color:red;">e</span> AI Studio
+# Resume AI ✍️: Resumos Automáticos com Inteligência Aritificial (Google AI Studio)
 
 O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência artificial para gerar resumos automáticos a partir de textos e documentos.
 
@@ -14,9 +14,9 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 ## Benefícios
 
-- **Economia de Tempo:** Ao utilizar o Resume AI para gerar resumos instantâneos, você economiza tempo valioso que pode ser direcionado para outras tarefas prioritárias.
+- ⌚️ **Economia de Tempo:** Ao utilizar o Resume AI para gerar resumos instantâneos, você economiza tempo valioso que pode ser direcionado para outras tarefas prioritárias.
   
-- **Aumento da Produtividade:** Tome decisões mais rápidas e eficazes com base nos resumos claros e concisos gerados pelo Resume AI, impulsionando a produtividade do seu trabalho.
+- 🧱 **Aumento da Produtividade:** Tome decisões mais rápidas e eficazes com base nos resumos claros e concisos gerados pelo Resume AI, impulsionando a produtividade do seu trabalho.
 
 ## Índice
 
