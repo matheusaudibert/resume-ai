@@ -227,6 +227,8 @@ def main():
     with st.spinner('Verificando sua chave...'):
       time.sleep(1.5)
     if len(chave_temp) == 39:
+      API_KEY = chave_temp
+      genai.configure(api_key=API_KEY)
       with st.spinner('Conectando-se aos servidores do Google...'):
         time.sleep(1.5)
       if pdf == texto:
