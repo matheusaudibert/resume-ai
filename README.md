@@ -94,7 +94,7 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 
 ![Logo](docs/resume_ai_pdf_upload.png)
 
-Neste exemplo, esta sendo enviado um PDF contanto uma história fictícia sobre um garota chamado Matheus, que é um entusiasta da programação. O PDF contém **2670** caracteres, e poder ser visualizado [aqui](docs/resume/exemplo_conto). 
+Neste exemplo, esta sendo enviado um PDF contanto uma história fictícia sobre um garota chamado Matheus, que é um entusiasta da programação. O PDF contém **2670** caracteres, e poder ser visualizado [aqui](docs/exemplo_conto.pdf). 
 
 3. **Recebe a API KEY do usuário**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
 
