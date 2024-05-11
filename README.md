@@ -30,7 +30,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 4. [Como funciona](#como-funciona)
 
-5. [Observações](#observaoções)
+5. [Observações](#observaçõess)
 
 6. [Contato](#contato)
 
@@ -91,7 +91,9 @@ A execução do código acima irá retonar a URL Local (localhost:XXXX). Cole-a 
 ## Observações
 
 - O **Resume AI** está em processo de desenvolvimento. Futuramente sugirão novas possibilidades, como, entrada de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros.
+  
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
+  
 - A documentação do código será feita em breve.
 
 ## Contato
