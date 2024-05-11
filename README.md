@@ -92,7 +92,7 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 
 1. **O Resume AI recebe o prompt do usuário**: O usuário entra com algum conteúdo que deseja receber o resumo. Documento PDF ou texto.
 
-![Imagem](docs/resume_ai_pdf_upload.png)
+![Logo](docs/resume_ai_pdf_upload.png)
 
 Neste exemplo, esta sendo enviado um PDF contanto uma história fictícia sobre um garota chamado Matheus, que é um entusiasta da programação. O PDF contém **2670** caracteres, e poder ser visualizado [aqui](docs/resume/exemplo_conto). 
 
