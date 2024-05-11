@@ -65,7 +65,12 @@ python -m pip install -r requirements.txt
 
 1. **Acesse o local em que a ferramente está hospedada**
 
-**Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app])
+**Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
+
+2. **Cole sua API KEY**
+
+Você deve inserir sua chave da API do Google AI studio para se conectar.
+**Não tem chave?** [Gere] uma [aqui!](https://aistudio.google.com/app/apikey)
 
 ## Utilização Local
 
