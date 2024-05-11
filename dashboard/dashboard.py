@@ -1,7 +1,9 @@
 import streamlit as st
 import google.generativeai as genai
-import settings
 import PyPDF2
+import time
+import settings
+
 
 
 @st.cache_data
@@ -155,6 +157,7 @@ def main():
     
     if input_method == 'Enviar um documento (PDF)':
       pdf = st.file_uploader("Envie um documento", type=['pdf'])
+      time.sleep(3)
 
 
     if input_method == 'Digitar texto, palavra ou termo':
