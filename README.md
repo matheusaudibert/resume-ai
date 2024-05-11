@@ -89,9 +89,9 @@ A execução do código acima irá retonar a URL Local (localhost:XXXX). Cole-a 
 
 1. **O Resume AI recebe o prompt do usuário**: O usuário entra com algum conteúdo que deseja receber o resumo. Documento PDF ou texto.
 
-2. **Recebe a API KEY do usuário**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
+3. **Recebe a API KEY do usuário**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
 
-3. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir. 
+4. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir. 
 
 ## Observações
 
