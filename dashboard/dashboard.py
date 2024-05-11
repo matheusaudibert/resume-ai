@@ -260,7 +260,5 @@ def main():
     else:
       st.markdown("❌ Ish, deu ruim! parece que sua chave não funcionou.")
       
-    
-
 if __name__ == "__main__":
     main()
