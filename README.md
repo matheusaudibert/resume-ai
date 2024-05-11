@@ -53,7 +53,7 @@ https://github.com/matheusaudibert/resume_ai.git
 2. **Instale as dependências:**
 
 ```bash
-cd summit
+cd dashboard
 python -m pip install -r requirements.txt
 ```
 
@@ -63,9 +63,9 @@ python -m pip install -r requirements.txt
 
 1. **Acesse o local em que a ferramente está hospedada**
 
-```bash
+
 Streamlit - [https://resumeia.streamlit.app](https://resumeia.streamlit.app])
-```
+
 ## Utilização Local
 
 1. **Execute o script usnado o streamlit**:
