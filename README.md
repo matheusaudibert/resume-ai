@@ -108,5 +108,3 @@ Para obter mais informações sobre o Resumi AI ou me conhecer, você pode entra
 - **LinkedIn:** [Matheus Audibert](https://www.linkedin.com/in/matheusaudibert/)
 - **Email:** matheusaudibert2019@outlook.com
 - **Discord:** hvmex
-
-Agradecemos seu interesse no Summit!
