@@ -148,12 +148,12 @@ def ler_pdf(pdf):
 def main():
     st.title("Resume AI ✍️")
 
-    input_method = st.radio("Selecione o método de entrada:", ('Enviar um documento', 'Digitar texto, palavra ou termo'))
+    input_method = st.radio("Selecione o método de entrada:", ('Enviar um documento (PDF)', 'Digitar texto, palavra ou termo'))
 
     pdf = None
     texto = None
     
-    if input_method == 'Enviar um documento':
+    if input_method == 'Enviar um documento (PDF)':
       pdf = st.file_uploader("Envie um documento", type=['pdf'])
 
 
