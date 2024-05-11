@@ -24,13 +24,15 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 1. [Instalação](#instalação)
 
-2. [Utilização](#utilização)
+2. [Utilização Remota](#utilização-remota)
 
-3. [Como funciona](#comofunciona)
+3. [Utilização Local](#utilização-local)
 
-4. [Observações](#observaoções)
+4. [Como funciona](#como-funciona)
 
-5. [Contato](#contato)
+5. [Observações](#observaoções)
+
+6. [Contato](#contato)
 
 ## Instalação
 
