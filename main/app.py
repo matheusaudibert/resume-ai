@@ -195,12 +195,12 @@ def main():
 
         #### Recursos:
 
-        - 📦 **Upload Simples** Os usuários podem enviar arquivos (PDF, TXT, imagens) ou colar links de vídeos do YouTube para análise. 
+        - 📦 **Upload Simples** Os usuários podem enviar arquivos (PDFs) e gerarem resumos instataneamente. 
         - 💡 **Resumos Instantâneos:** A IA do Google Generative permite gerar resumos precisos e rápidos do conteúdo fornecido.
         - 😃 **Visualização Amigável**: Explore seus resumos de forma organizada e fácil de entender.
-        - 📲 **Acesso em Qualquer Lugar**: Use nossa aplicação em qualquer dispositivo com acesso à internet.
+        - 📲 **Acesso em Qualquer Lugar**: Use o **Resume AI** aplicação em qualquer dispositivo com acesso à internet.
 
-        Junte-se ao **Resume AI** e libere o poder da inteligência para acessar conhecimentos valiosos de forma instantânea. A revolução da informação começa aqui! 🌐🤿
+        Junte-se ao **Resume AI** e libere o poder da inteligência artifical para acessar conhecimentos valiosos de forma instantânea. A revolução da informação começa aqui! 🌐🤿
 
         ##### Feito por: Matheus Audibert 👨‍💻
         ##### LinkedIn: [linkedin.com/in/matheusaudibert/](linkedin.com/in/matheusaudibert/) 
