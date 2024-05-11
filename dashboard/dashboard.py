@@ -183,7 +183,7 @@ def main():
         else:
             st.write("❌ Erro! Chave não localizada.")
 
-    st.markdown('[Gere sua chave aqui!](https://aistudio.google.com/app/apikey)')
+    st.markdown('Gere sua chave [aqui!](https://aistudio.google.com/app/apikey)')
 
       
     st.button('Resumir (clique uma vez e espere)', type="primary")
