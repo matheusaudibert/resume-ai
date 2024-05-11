@@ -59,12 +59,11 @@ python -m pip install -r requirements.txt
 
 **Observações**:
 
-## Utilização
+## Utilização Remota
 
 1. **Acesse o local em que a ferramente está hospedada**
 
-
-Streamlit - [https://resumeia.streamlit.app](https://resumeia.streamlit.app])
+**Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app])
 
 ## Utilização Local
 
@@ -76,37 +75,28 @@ streamlit run .\dashboard.py
 
 2. **URL Local**:
 ```bash
-A execução do código acima irá retonar a URL Local (localhost:XXXX). Cole-a no em seunavegador
+A execução do código acima irá retonar a URL Local (localhost:XXXX). Cole-a no em seu navegador.
 ```
 
 ## Como funciona
 
-1. **O Summit acessa o Google Drive**: Busca automaticamente por arquivos de vídeo na pasta configurada no arquivo `.env`.
+1. **O Resume AI recebe o prompt do usuário**: O usuário entra com algum conteúdo que deseja receber o resumo. Documento PDF ou texto.
 
-2. **Processamento de cada vídeo**:
-- **Armazenamento local**: O vídeo é armazenado localmente no computador.
+2. **Recebe a API KEY do usuário**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
 
-- **Extração de áudio**: Somente o áudio é extraído do vídeo para reduzir o uso de tokens da API do Ai Studio.
-
-- **Análise do Ai Studio**: O arquivo de áudio é enviado para o Ai Studio, que gera um resumo da reunião.
-
-- **Armazenamento do resumo**: O resumo é armazenado em uma lista.
-3. **Envio de emails**:
-- **Criação de emails**: Para cada resumo, um email é criado com o conteúdo do resumo e os destinatários informados.
-
-- **Envio via API do Gmail**: Os emails são enviados para os destinatários usando a API do Gmail.
+3. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir. 
 
 ## Observações
 
-- O Summit está em desenvolvimento e novas funcionalidades serão adicionadas em breve.
-
-- Se você encontrar algum problema, por favor, envie um relatório de bug no repositório do GitHub.
+- O Resume AI está em processo de desenvolvimento. Futuramente sugirão novas possibilidades, como, entrada de **IMAGENS**, **VÍDEOS**, **AÚDIOS**, **PLANILHAS**, **CÓDIGOS**, entre outros.
+- Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
 
 ## Contato
 
-Para obter mais informações sobre o Summit ou para relatar problemas, você pode entrar em contato conosco através dos seguintes canais:
+Para obter mais informações sobre o Resumi AI ou me conhecer, você pode entrar em contato comigo através dos seguintes canais:
 
-- **LinkedIn:** [Fellipe Machado](https://www.linkedin.com/in/fellipe-luz/)
-- **Email:** fellipe.luz.machado@gmail.com
+- **LinkedIn:** [Matheus Audibert](https://www.linkedin.com/in/matheusaudibert/)
+- **Email:** matheusaudibert2019@outlook.com
+- **Discord:** hvmex
 
 Agradecemos seu interesse no Summit!
