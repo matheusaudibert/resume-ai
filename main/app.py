@@ -3,6 +3,9 @@ import google.generativeai as genai
 import settings
 import PyPDF2
 
+
+@st.cache_data
+
 def resume_texto (texto: str):
    
     generation_config = {
