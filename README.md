@@ -1,4 +1,4 @@
-# Resume AI ✍️: Resumos Automáticos com
+# Resume AI ✍️: Resumos Automáticos com Inteligência Aritificial <span style="color:blue;">G</span> <span style="color:red;">o</span> <span style="color:yellow;">o</span> <span style="color:blue;">g</span> <span style="color:green;">e</span> <span style="color:red;">e</span> AI Studio
 
 O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência artificial para gerar resumos automáticos a partir de textos e documentos.
 
@@ -32,7 +32,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 - Python 3.6 ou superior
 - Pip
-- Chave API <span style="color:blue;">G</span> <span style="color:red;">G</span> <span style="color:yellow;">G</span> <span style="color:blue;">G</span> <span style="color:green;">G</span> <span style="color:red;">G</span> Ai Studio
+- Chave API <span style="color:blue;">G</span> <span style="color:red;">o</span> <span style="color:yellow;">o</span> <span style="color:blue;">g</span> <span style="color:green;">e</span> <span style="color:red;">e</span> Ai Studio
 
 **Passos:**
 
