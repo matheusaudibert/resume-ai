@@ -85,7 +85,7 @@ streamlit run .\dashboard.py
 
 2. **URL Local**:
 ```bash
-A execução do código acima irá retonar a URL Local (localhost:XXXX). Cole-a no em seu navegador.
+A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole-a no em seu navegador.
 ```
 
 ## Como funciona
