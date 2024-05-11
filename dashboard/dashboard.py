@@ -158,26 +158,24 @@ def resume_pdf (conteudo:str):
   #retorna a respota para a main
   return resposta_pdf
 
-
+#funcao que faz a leitura do pdf
 def ler_pdf(pdf):
+  #comando que efetua o acesso ao pdf
   leitor_pdf = PyPDF2.PdfReader(pdf)
+  #salva o número de páginas do pdf
   num_pages = len(leitor_pdf.pages)
+  #inicializa uma string vazia
   conteudo = ""
+  #laço para rodar todas as páginas
   for page_num in range(num_pages):
+    #concatena o texto de cada pagina do pdf
     conteudo += leitor_pdf.pages[page_num].extract_text()
+    #retorna todo o conteudo do pdf (concatenado)
   return conteudo
 
-def verificar_chave(chave_temp: str):
-  if len(chave_temp) == 39:
-    API_KEY = chave_temp
-    genai.configure(api_key=API_KEY)
-    st.write("✅ Tudo certo! Chave encontrada.")
-  else:
-    st.write("❌ Deu ruim! Chave não encontrada.")
-      
-
-  
+#função principal
 def main():
+  
   st.set_page_config(layout="centered")
 
   with st.sidebar:
