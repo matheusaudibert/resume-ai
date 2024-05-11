@@ -88,7 +88,7 @@ A execução do código acima irá retonar a URL Local (localhost:XXXX). Cole-a 
 
 ## Observações
 
-- O Resume AI está em processo de desenvolvimento. Futuramente sugirão novas possibilidades, como, entrada de **IMAGENS**, **VÍDEOS**, **AÚDIOS**, **PLANILHAS**, **CÓDIGOS**, entre outros.
+- O **Resume AI** está em processo de desenvolvimento. Futuramente sugirão novas possibilidades, como, entrada de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros.
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
 
 ## Contato
