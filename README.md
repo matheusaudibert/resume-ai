@@ -26,18 +26,19 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 2. [Utilização](##Utilização)
 3. [Como funciona](##Como-funciona)
 4. [Observações](##Observações)
-5. [Contato](C##ontato)
+5. [Contato](##Contato)
 
 ## Instalação
 
 **Pré-requisitos:**
 
-- Python 3.6 ou superior
+- Python 3.11 ou superior
 - Pip
-- Chave API <span style="color:blue;">G</span> <span style="color:red;">o</span> <span style="color:yellow;">o</span> <span style="color:blue;">g</span> <span style="color:green;">e</span> <span style="color:red;">e</span> Ai Studio
+- Chave API Google Ai Studio
 
 **Passos:**
 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/chulipinho/summit
+   ```
