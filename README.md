@@ -22,9 +22,9 @@ O Resume AI é uma ferramenta que utiliza a API do Google e a inteligência arti
 
 ## Índice
 
-1. [Instalação](#instalação)
+1. [Utilização Remota](#utilização-remota)   
 
-2. [Utilização Remota](#utilização-remota)
+2. [Instalação](#instalação)
 
 3. [Utilização Local](#utilização-local)
 
@@ -33,6 +33,17 @@ O Resume AI é uma ferramenta que utiliza a API do Google e a inteligência arti
 5. [Observações](#observaçõess)
 
 6. [Contato](#contato)
+
+## Utilização Remota
+
+1. **Acesse o local em que a ferramente está hospedada**
+
+**Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
+
+2. **Cole sua API KEY**
+
+Você deve inserir sua chave da API do Google AI studio para se conectar.
+**Não tem chave?** Gere uma [aqui!](https://aistudio.google.com/app/apikey)
 
 ## Instalação
 
@@ -61,16 +72,7 @@ python -m pip install -r requirements.txt
 
 **Observações**:
 
-## Utilização Remota
 
-1. **Acesse o local em que a ferramente está hospedada**
-
-**Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
-
-2. **Cole sua API KEY**
-
-Você deve inserir sua chave da API do Google AI studio para se conectar.
-**Não tem chave?** [Gere] uma [aqui!](https://aistudio.google.com/app/apikey)
 
 ## Utilização Local
 
