@@ -48,7 +48,7 @@ Você deve inserir sua chave da API do Google AI studio para se conectar.
 
  **Observação**:
 
-# Streamlit é uma biblioteca de código aberto em Python que revolucionou a criação de aplicativos web para projetos de ciência de dados e aprendizado de máquina. Sua proposta central é simplificar o processo de desenvolvimento, permitindo que cientistas de dados criem interfaces de usuário interativas e visualmente atraentes. A biblioteca se destaca por sua abordagem declarativa, onde o desenvolvedor descreve a estrutura e o comportamento da interface, e o Streamlit se encarrega de renderizar os elementos e gerenciar a interatividade. Isso permite prototipagem rápida e iteração ágil, ideal para explorar dados, apresentar resultados de modelos e compartilhar insights com stakeholders de forma eficiente.
+Streamlit é uma biblioteca de código aberto em Python que revolucionou a criação de aplicativos web para projetos de ciência de dados e aprendizado de máquina. Sua proposta central é simplificar o processo de desenvolvimento, permitindo que cientistas de dados criem interfaces de usuário interativas e visualmente atraentes. A biblioteca se destaca por sua abordagem declarativa, onde o desenvolvedor descreve a estrutura e o comportamento da interface, e o Streamlit se encarrega de renderizar os elementos e gerenciar a interatividade. Isso permite prototipagem rápida e iteração ágil, ideal para explorar dados, apresentar resultados de modelos e compartilhar insights com stakeholders de forma eficiente.
 
 ![Logo](docs/streamlit.png)
 
