@@ -1,8 +1,8 @@
 # Resume AI ✍️: Resumos Automáticos com Inteligência Artificial (Google AI Studio)
 
-O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência artificial para gerar resumos automáticos a partir de textos e documentos. **Versão: 0.2**
+O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência artificial para gerar resumos automáticos a partir de textos e documentos. **Versão: 0.3**
 
-![Logo](docs/resume_ai_interface.png)
+
 
 ## Recursos:
 
@@ -90,21 +90,13 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 
 ## Como funciona
 
-1. **O Resume AI recebe o prompt do usuário**: O usuário entra com algum conteúdo que deseja receber o resumo. Documento PDF ou texto.
-
-![Logo](docs/resume_ai_pdf_upload.png)
-
-Neste exemplo, esta sendo enviado um PDF contanto uma história fictícia sobre um garota chamado Matheus, que é um entusiasta da programação. O PDF contém **2670** caracteres, e poder ser visualizado [aqui](docs/exemplo_conto.pdf). 
+1. **O Resume AI recebe o prompt do usuário**: O usuário entra com algum conteúdo que deseja receber o resumo. Documento PDF ou texto. 
 
 2. **Recebe a API KEY do usuário 🔑**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
-
-![Logo](docs/resume_ai_api_key.png)
 
 Aqui a ferramenta tentará validar a chave do usuário com o servidor do Google AI Studio.
 
 3. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir. 
-
-![Logo](docs/resume_ai_output.png)
 
 ## Observações
 
