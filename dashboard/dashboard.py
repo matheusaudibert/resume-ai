@@ -7,7 +7,6 @@ import google.generativeai as genai #Importa a biblioteca da GOOGLE.GENERATIVEAI
 import PyPDF2 #Importa a biblioteca do PYPDF2
 import time #Importa a biblioteca TIME
 import settings #Importa o aqruivo settings.py
-from PIL import Image 
 
 #função que gera o resumo do texto.
 def resume_texto (texto:str):
@@ -180,14 +179,9 @@ def ler_pdf(pdf):
 #função principal
 def main():
 
-  st.set_page_config(page_title="Resume AI", page_icon='icon.ico', layout="centered", initial_sidebar_state="auto", menu_items=None)
-
-  # icone = Image.open('icon.ico')
+  st.set_page_config(page_title="Resume AI", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
   with st.sidebar:
-        # imagem = Image.open('logo.png')
-
-        # st.image(imagem, width=200)
 
         st.markdown("""
         ### Bem-vindo ao **Resume AI**! ✅
