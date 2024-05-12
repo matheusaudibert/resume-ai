@@ -22,7 +22,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 ## Índice
 
-1. [Utilização Remota](#📲-utilização-remota)   
+1. [Utilização Remota](#utilização-remota)   
 
 2. [Instalação](#instalação)
 
@@ -34,7 +34,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 6. [Contato](#contato)
 
-## 📲 Utilização Remota
+## Utilização Remota
 
 1. **Acesse o local em que a ferramente está hospedada**
 
