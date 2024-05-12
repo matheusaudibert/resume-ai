@@ -187,7 +187,7 @@ def main():
   with st.sidebar:
         # imagem = Image.open('logo.png')
 
-        st.image(imagem, width=200)
+        # st.image(imagem, width=200)
 
         st.markdown("""
         ### Bem-vindo ao **Resume AI**! ✅
