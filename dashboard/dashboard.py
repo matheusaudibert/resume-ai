@@ -198,7 +198,7 @@ def main():
 
         #### Recursos:
 
-        - 📦 **Upload Simples** Os usuários podem enviar arquivos (PDF, TXT, imagens) ou colar links de vídeos do YouTube para análise. 
+        - 📦 **Upload Simples** Os usuários podem enviar arquivos (PDF) ou textos para análise. 
         - 💡 **Resumos Instantâneos:** A IA do Google Generative permite gerar resumos precisos e rápidos do conteúdo fornecido.
         - 😃 **Visualização Amigável**: Explore seus resumos de forma organizada e fácil de entender.
         - 📲 **Acesso em Qualquer Lugar**: Use nossa aplicação em qualquer dispositivo com acesso à internet.
