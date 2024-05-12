@@ -1040,7 +1040,8 @@ def main():
             with st.spinner('Anotando os pontos principais...'):
               time.sleep(1.5)
             with st.spinner('Resumindo...'):
-              st.toast('Lembre-se, PDFs com conteúdos extensos levam mais tempos para serem resumidos!', icon='⚠️')
+              if len(PyPDF2.PdfReader(pdf).pages) > 5:
+                st.toast('Lembre-se, PDFs com conteúdos extensos levam mais tempos para serem resumidos!', icon='⚠️')
               conteudo = resume_pdf(conteudo=conteudo)
               st.divider()
               st.write(conteudo)
