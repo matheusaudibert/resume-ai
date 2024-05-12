@@ -191,8 +191,8 @@ def resume_pdf (conteudo:str):
                         Não simplesmente repita o texto fornecido. Não copie a estrutura do texto fornecido.\n\n
                         Evite repetições. Conecte todas as ideias entre si.\n\n
                         O texto deve ser dividido em parágrafos. Os parágrafos devem ser indentados.\n\n
-                        Antes do resumo, escreva uma lista curta e em formato de tópicos dos principais pontos a serem lembrados.\n\n
-                        Faça um título desta maneira: Resumo (conteúdo)
+                        Antes do resumo você deve escreva uma lista curta e em formato de tópicos dos principais pontos a serem lembrados.\n\n
+                        Faça um título para o resumo desta maneira: Resumo (conteúdo)
                         """]
   model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
                                 generation_config=generation_config,
@@ -944,7 +944,7 @@ anos a partir daquela data. Bolsa válida para os MBAs que fizerem parte do port
                           )
   
   #construção do prompt para o usuário, contatenando o texto
-  convo.send_message(f"""Faça um resumo sobre este texto: {conteudo}""")
+  convo.send_message(f"""Faça um resumo sobre, seguindos os exemplos, deste texto: {conteudo}""")
 
   #resposta da IA para o prompt do usuário
   resposta_pdf = convo.last.text
