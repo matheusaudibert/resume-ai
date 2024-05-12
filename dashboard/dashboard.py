@@ -206,8 +206,7 @@ def main():
         Junte-se ao **Resume AI** e libere o poder da inteligência para acessar conhecimentos valiosos de forma instantânea. A revolução da informação começa aqui! 🌐🤿
 
         ##### Feito por: Matheus Audibert 👨‍💻
-        ##### LinkedIn: [linkedin.com/in/matheusaudibert/](linkedin.com/in/matheusaudibert/) 
-        ##### Github: [github.com/matheusaudibert](github.com/matheusaudibert)
+        ##### Github: [github.com/matheusaudibert](github.com/matheusaudibert) 😼
         """)
 
   st.title("Resume AI ✍")
