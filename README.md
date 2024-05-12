@@ -113,6 +113,5 @@ Aqui a ferramenta tentará validar a chave do usuário com o servidor do Google 
 
 Para obter mais informações sobre o Resumi AI ou me conhecer, você pode entrar em contato comigo através dos seguintes canais:
 
-- **LinkedIn:** [Matheus Audibert](https://www.linkedin.com/in/matheusaudibert/)
 - **Email:** matheusaudibert2019@outlook.com
 - **Discord:** hvmex
