@@ -248,6 +248,9 @@ def main():
             st.toast('Lembre-se, PDFs com conteúdos extensos levam mais tempos para serem resumidos!', icon='⚠️')
             conteudo = resume_pdf(conteudo=conteudo)
           st.divider()
+          if conteudo is None:
+            st.write("Desculpa, não conseguir ler este PDF. Certifique-se de que é possível fazer a leitura do documento.")
+            
           st.write(conteudo)
           st.divider()
 
