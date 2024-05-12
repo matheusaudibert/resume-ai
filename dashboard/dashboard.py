@@ -182,10 +182,10 @@ def main():
 
   st.set_page_config(page_title="Resume AI", page_icon='icon.ico', layout="centered", initial_sidebar_state="auto", menu_items=None)
 
-  icone = Image.open('icon.ico')
+  # icone = Image.open('icon.ico')
 
   with st.sidebar:
-        imagem = Image.open('logo.png')
+        # imagem = Image.open('logo.png')
 
         st.image(imagem, width=200)
 
@@ -210,7 +210,7 @@ def main():
         ##### Github: [github.com/matheusaudibert](github.com/matheusaudibert)
         """)
 
-  st.title("Resume AI 📘")
+  st.title("Resume AI ✍")
 
   input_method = st.radio("Selecione o método de entrada:", ('Enviar um documento', 'Digitar texto, palavra ou termo'))
 
