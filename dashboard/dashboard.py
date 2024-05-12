@@ -268,11 +268,11 @@ def main():
   on = st.toggle("Mostrar parâmetros da IA.")
 
   if on:
-    st.markdown("**Temperatura**")
+    st.caption("Temperatura")
     st.slider("", 0.0, 1.0, 0.2, disabled=True)
-    st.markdown("**Top P**")
+    st.caption("Top P")
     st.slider("", 0.0, 1.0, 1.0, disabled=True)
-    st.markdown("**Top K**")
+    st.caption("Top K")
     st.slider("", 0.0, 50.0, 0.0, disabled=True)
     st.markdown("Para saber mais sobre parâmetros de IA, acesse [aqui!](https://cloud.google.com/vertex-ai/generative-ai/docs/text/test-text-prompts?hl=pt-br#generative-ai-test-text-prompt-python_vertex_ai_sdk)")
       
