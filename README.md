@@ -41,7 +41,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
    **Observação**: Streamlit é uma biblioteca de código aberto em Python que revolucionou a criação de aplicativos web para projetos de ciência de dados e aprendizado de máquina. Sua proposta central é simplificar o processo de desenvolvimento, permitindo que cientistas de dados criem interfaces de usuário interativas e visualmente atraentes.
    A biblioteca se destaca por sua abordagem declarativa, onde o desenvolvedor descreve a estrutura e o comportamento da interface, e o Streamlit se encarrega de renderizar os elementos e gerenciar a interatividade. Isso permite prototipagem rápida e iteração ágil, ideal para explorar dados, apresentar resultados de modelos e compartilhar insights com stakeholders de forma eficiente.
 
-![Logo](docs/streamlit.jpg)
+![Logo](docs/streamlit.png)
 
 **Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
 
@@ -92,19 +92,26 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 ## Como funciona
 
 1. **O Resume AI recebe um input do usuário**: O usuário entra com algum conteúdo que deseja receber o resumo. Documento PDF ou texto.
+   
    No exemplo, é dado um arquivo PDF chamadado Exemplo_Conto. Este arquivo contém um texto fictício sobra um garoto chamado Matheus e sua paixão pela tecnologia. Você poder acessar esse documento aqui.
+   
    ![Logo](docs/input.png)
 
-2. **Recebe a API KEY do usuário 🔑**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
+3. **Recebe a API KEY do usuário 🔑**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
+   
    Em seguida, é informada uma API KEY, para se conectar com os servidores do Google.
+   
    ![Logo](docs/key.png)
    
-3. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir.
+5. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir.
    O resumo do arquivo PDF chamado Exemplo_PDF é gerado para o usuário.
+   
    ![Logo](docs/output.png)
 
-Extra. **É possível visualizar os parâmetros da IA**: Os parâmetros que constituem os modelos de geração de respostas da IA são apresentados ao usuário.
-   Esses parâmetros são apenas visuais e informam os valores dos parâmetros de Temperatura, Top P e Top K, que estão sendo utilizados pela inteligência artificial.
+7. **É possível visualizar os parâmetros da IA**: Os parâmetros que constituem os modelos de geração de respostas da IA são apresentados ao usuário.
+
+Esses parâmetros são apenas visuais e informam os valores dos parâmetros de Temperatura, Top P e Top K, que estão sendo utilizados pela inteligência artificial.
+
    ![Logo](docs/parameters.png)
 
 ## Observações
