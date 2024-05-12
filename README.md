@@ -2,7 +2,7 @@
 
 O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência artificial para gerar resumos automáticos a partir de textos e documentos. **Versão: 0.3**
 
-
+![Logo](docs/app.png)
 
 ## Recursos:
 
@@ -36,7 +36,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 ## Utilização Remota
 
-1. **Acesse o local em que a ferramente está hospedada**
+1. **Acesse o local em que a ferramente está hospedada (Streamlit).**
 
 **Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
 
@@ -101,9 +101,9 @@ Aqui a ferramenta tentará validar a chave do usuário com o servidor do Google 
 ## Observações
 
 - O **Resume AI** está em processo de desenvolvimento. Futuramente sugirão novas funcionalidades, como: 
-- Trabalhar com entradas de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros;
-- Possibilidade de alterar os parâmetros da intigência artificial, como temperatura, top p e top ;
-- Criar diferentes modelos de resumo que o usuáio pode selecionar.
+  - Trabalhar com entradas de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros.
+  - Parâmetros de IA personalizados, como: **Temperatura**, **Top P** e **Top K**.
+  - Seleção de **modelos** de resumos.
   
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
   
@@ -115,3 +115,4 @@ Para obter mais informações sobre o Resumi AI ou me conhecer, você pode entra
 
 - **Email:** matheusaudibert2019@outlook.com
 - **Discord:** hvmex
+
