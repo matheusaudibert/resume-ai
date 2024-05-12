@@ -2,7 +2,7 @@
 
 O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência artificial para gerar resumos automáticos a partir de textos e documentos. **Versão: 0.3**
 
-[!Logo](docs/app.png)
+![Logo](docs/app.png)
 
 ## Recursos:
 
