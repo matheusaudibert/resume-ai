@@ -944,7 +944,8 @@ anos a partir daquela data. Bolsa válida para os MBAs que fizerem parte do port
                           )
   
   #construção do prompt para o usuário, contatenando o texto
-  convo.send_message(f"""Faça um resumo sobre, seguindos os exemplos, deste texto: {conteudo}""")
+  convo.send_message(f"""Faça um resumo sobre, seguindos os exemplos, deste texto: {conteudo}\n
+                      Não esqueceça de fazer uma pequena lista com os topicos principais.""")
 
   #resposta da IA para o prompt do usuário
   resposta_pdf = convo.last.text
