@@ -249,8 +249,7 @@ def main():
             conteudo = resume_pdf(conteudo=conteudo)
           st.divider()
           if conteudo is None:
-            st.write("Desculpa, não conseguir ler este PDF. Certifique-se de que é possível fazer a leitura do documento.")
-            
+            st.write("Desculpa, não conseguir ler este PDF. Certifique-se de que o ducumento seja capaz de ser lido.")
           st.write(conteudo)
           st.divider()
 
