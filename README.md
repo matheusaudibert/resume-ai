@@ -36,7 +36,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 ## Utilização Remota
 
-1. **Acesse o local em que a ferramente está hospedada**
+1. **Acesse o local em que a ferramente está hospedada (Streamlit).**
 
 **Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
 
@@ -115,3 +115,4 @@ Para obter mais informações sobre o Resumi AI ou me conhecer, você pode entra
 
 - **Email:** matheusaudibert2019@outlook.com
 - **Discord:** hvmex
+
