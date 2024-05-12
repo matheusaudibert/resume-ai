@@ -7,6 +7,7 @@ import google.generativeai as genai #Importa a biblioteca da GOOGLE.GENERATIVEAI
 import PyPDF2 #Importa a biblioteca do PYPDF2
 import time #Importa a biblioteca TIME
 import settings #Importa o aqruivo settings.py
+from PIL import Image 
 
 #função que gera o resumo do texto.
 def resume_texto (texto:str):
@@ -179,9 +180,14 @@ def ler_pdf(pdf):
 #função principal
 def main():
 
-  st.set_page_config(layout="centered")
+  st.set_page_config(page_title="Resume AI", page_icon='icon.ico', layout="centered", initial_sidebar_state="auto", menu_items=None)
+
+  icone = Image.open('icon.ico')
 
   with st.sidebar:
+        imagem = Image.open('logo.png')
+
+        st.image(imagem, width=200)
 
         st.markdown("""
         ### Bem-vindo ao **Resume AI**! ✅
@@ -204,7 +210,7 @@ def main():
         ##### Github: [github.com/matheusaudibert](github.com/matheusaudibert)
         """)
 
-  st.title("Resume AI ✍️")
+  st.title("Resume AI 📘")
 
   input_method = st.radio("Selecione o método de entrada:", ('Enviar um documento', 'Digitar texto, palavra ou termo'))
 
@@ -259,6 +265,17 @@ def main():
           st.divider()
     else:
       st.markdown("❌ Ish, deu ruim! parece que sua chave não funcionou.")
+
+  on = st.toggle("Mostrar parâmetros da IA.")
+
+  if on:
+    st.markdown("**Temperatura**")
+    st.slider("", 0.0, 1.0, 0.2, disabled=True)
+    st.markdown("**Top P**")
+    st.slider("", 0.0, 1.0, 1.0, disabled=True)
+    st.markdown("**Top K**")
+    st.slider("", 0.0, 50.0, 0.0, disabled=True)
+    st.markdown("Para saber mais sobre parâmetros de IA, acesse [aqui!](https://cloud.google.com/vertex-ai/generative-ai/docs/text/test-text-prompts?hl=pt-br#generative-ai-test-text-prompt-python_vertex_ai_sdk)")
       
 if __name__ == "__main__":
     main()
