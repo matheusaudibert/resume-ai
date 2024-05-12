@@ -1,6 +1,5 @@
 #Matheus Audibert
 #Resume_AI
-#Este projeto foi feita a partir da aulas da ALURA (Imersão DEV)
 
 import streamlit as st #Importa a biblioteca do STREAMLIT
 import google.generativeai as genai #Importa a biblioteca da GOOGLE.GENERATIVEAI
