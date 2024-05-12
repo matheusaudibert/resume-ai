@@ -101,9 +101,9 @@ Aqui a ferramenta tentará validar a chave do usuário com o servidor do Google 
 ## Observações
 
 - O **Resume AI** está em processo de desenvolvimento. Futuramente sugirão novas funcionalidades, como: 
-  Trabalhar com entradas de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros.
-  Parâmetros de IA personalizados, como: Temperatura, Top P e Top K.
-  Seleção de modelos de resumos.
+  - Trabalhar com entradas de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros.
+  - Parâmetros de IA personalizados, como: Temperatura, Top P e Top K.
+  - Seleção de modelos de resumos.
   
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
   
