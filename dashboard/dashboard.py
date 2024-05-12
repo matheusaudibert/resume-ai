@@ -264,7 +264,7 @@ def main():
           st.write(resposta_texto)
           st.divider()
     else:
-      st.markdown("❌ Ish, deu ruim! parece que sua chave não funcionou.")
+      st.markdown("❌ Vish, deu ruim! parece que sua chave não funcionou.")
 
   on = st.toggle("Mostrar parâmetros da IA.")
 
