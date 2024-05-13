@@ -131,9 +131,10 @@ def main():
     st.slider("", 0, 1, 1, disabled=True)
     st.caption("Top K")
     st.slider("", 0, 50, 0, disabled=True)
-    st.markdown("Para saber mais sobre parâmetros de IA, acesse [aqui!](https://cloud.google.com/vertex-ai/generative-ai/docs/text/test-text-prompts?hl=pt-br#generative-ai-test-text-prompt-python_vertex_ai_sdk)")
+    st.markdown("Para saber como os parâmetros funcionam, clique [aqui!](https://cloud.google.com/vertex-ai/generative-ai/docs/text/test-text-prompts?hl=pt-br#generative-ai-test-text-prompt-python_vertex_ai_sdk)")
 
-  st.caption("Versão: 0.3")
+  st.caption("Versão: 0.7")
+  st.markdown("""Repositório do projeto no [Github](github.com/matheusaudibert/resume_ai)""")
       
 if __name__ == "__main__":
     main()
