@@ -40,9 +40,9 @@ O **Resume AI** é uma ferramenta que utiliza a inteligência artificial do Goog
 
 **Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
 
-2. **Cole sua API KEY 🔑**
+2. **Cole sua API KEY 🔑.**
 
-Você deve inserir sua chave da API do Google AI studio para se conectar.
+Você deve inserir sua chave da API do Google Gemini para se conectar.
 
 **Não tem chave?** Gere uma [aqui!](https://aistudio.google.com/app/apikey)
 
@@ -67,7 +67,7 @@ Você deve inserir sua chave da API do Google AI studio para se conectar.
 1. **Clone o repositório**:
 
 ```bash
-https://github.com/matheusaudibert/resume_ai.git
+git clone https://github.com/matheusaudibert/resume_ai.git
 ```
 
 2. **Instale as dependências:**
@@ -87,7 +87,7 @@ streamlit run .\dashboard.py
 
 2. **URL Local**:
 ```bash
-A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole-a no em seu navegador.
+A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole-a em seu navegador.
 ```
 
 ## Como funciona
@@ -118,6 +118,7 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
   - Trabalhar com entradas de **vídeos**, **áudios**, **planilhas**, entre outros.
   - Personalizar parâmetros de IA, como: **Temperatura**, **Top P** e **Top K**.
   - Seleção de **modelos** de resumos.
+  - Módulo **Resume AI *for developers***, um módulo em que será possível trabalhar com **linguagens de programação**.
   
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
   
