@@ -115,13 +115,15 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 ## Observações
 
 - O **Resume AI** está em processo de desenvolvimento. Futuramente sugirão novas funcionalidades, como: 
-  - Trabalhar com entradas de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros.
-  - Parâmetros de IA personalizados, como: **Temperatura**, **Top P** e **Top K**.
+  - Trabalhar com entradas de **vídeos**, **áudios**, **planilhas**, entre outros.
+  - Personalizar parâmetros de IA, como: **Temperatura**, **Top P** e **Top K**.
   - Seleção de **modelos** de resumos.
   
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
   
 - A documentação do código será feita em breve.
+  
+- A **validação da chave API** é feita de maneira trágica. Ainda estou estudando a melhor maneira de validar a chave.
 
 ## Contato
 
