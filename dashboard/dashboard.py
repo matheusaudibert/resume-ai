@@ -1,15 +1,11 @@
 #Matheus Audibert
 #Resume_AI
 
-import streamlit as st #Importa a biblioteca do STREAMLIT
-import google.generativeai as genai #Importa a biblioteca da GOOGLE.GENERATIVEAI
-import PyPDF2 #Importa a biblioteca do PYPDF2
-import time #Importa a biblioteca TIME
-import settings #Importa o aqruivo settings.py
-from pdf_functions import ler_pdf, resume_pdf
-from texto_functions import resume_texto
-
-# @st.cache_data
+import streamlit as st
+import PIL
+import time
+from formatacao_prompt import verifica_chave, ler_pdf, ler_docx, ler_txt, ler_imagem
+from gerador_resumo import resumir_imagem, resumir_texto
 
 #função principal
 def main():
@@ -40,80 +36,101 @@ def main():
 
   st.title("Resume AI ✍")
 
-  input_method = st.radio("Selecione o método de entrada:", ('Enviar um documento', 'Digitar texto, palavra ou termo'))
-
-  pdf = None
-  texto = None
+  input_method = st.radio("Selecione o método de entrada:", ('Enviar um documento (pdf, docx, txt)','Inserir uma imagem', 'Digitar texto, palavra ou termo'))
   
+  upload_arquivo = None  
+  upload_arquivo_texto = ""
     
-  if input_method == 'Enviar um documento':
-    pdf = st.file_uploader("Envie um documento", type=['pdf'])
+  if input_method == 'Enviar um documento (pdf, docx, txt)':
+    upload_arquivo = st.file_uploader("Envie um documento", type=['pdf', 'docx', 'txt'])
 
+  if input_method == 'Inserir uma imagem':
+    upload_arquivo = st.file_uploader("Envie um documento", type=['png', 'jpg', 'jpeg'])
 
   if input_method == 'Digitar texto, palavra ou termo':
-    texto = st.text_area("Digite um texto, palavra ou termo", "")
+    upload_arquivo_texto = st.text_area("Digite um texto, palavra ou termo", "")
+    
         
   chave_temp = st.text_input("Digite a chave da API 🔑")
           
   st.markdown('**Não tem uma chave?** Gere uma [aqui!](https://aistudio.google.com/app/apikey)')
   
-  if st.button('Resumir (clique uma vez e espere)', type="primary"):
-    
-    with st.spinner('Verificando sua chave...'):
+  if st.button('Resumir (clique uma vez e espere)', type="primary"):    
+    with st.spinner('🔎 Verificando sua chave...'):
       time.sleep(1.5)
-    if len(chave_temp) == 39:
-      API_KEY = chave_temp
-      genai.configure(api_key=API_KEY)
-      with st.spinner('Conectando-se aos servidores do Google...'):
+    if verifica_chave(chave_temp) is True:
+      with st.spinner('🚀 Conectando-se aos servidores do Google...'):
         time.sleep(1.5)
-      if pdf == texto:
-        st.write("✋ Calma aí! Me envie algo para resumir.")
-      else:
-        if pdf is not None:
-          with st.spinner('Lendo o PDF...'):
+      if upload_arquivo is not None:
+        if upload_arquivo.type == 'application/pdf':
+          with st.spinner('👀 Lendo o PDF...'):
             time.sleep(1.5)
-          conteudo = ler_pdf(pdf)
-          col1, col2, col3, col4 = st.columns(4)  
-          col1.write("📄 Número de páginas:")
-          col2.write(len(PyPDF2.PdfReader(pdf).pages))
-          if conteudo == "0":
-            st.toast('Erro ao gerar resumo!', icon="❌")
-            st.write("🔌 Não consegui ler este PDF. Certifique-se de que o documento contenha textos.")
-          else:
-            with st.spinner('Anotando os pontos principais...'):
-              time.sleep(1.5)
-            with st.spinner('Resumindo...'):
-              if len(PyPDF2.PdfReader(pdf).pages) > 5:
-                st.toast('Lembre-se, PDFs com conteúdos extensos levam mais tempos para serem resumidos!', icon='⚠️')
-              conteudo = resume_pdf(conteudo=conteudo)
-              st.divider()
-              st.write(conteudo)
-              st.divider()
-              st.toast('Resumo gerado!', icon="✅")
+            output_arquivo = ler_pdf(upload_arquivo)
+          
+        if upload_arquivo.type == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+          with st.spinner('👀 Lendo o DOCX...'):
+            time.sleep(1.5)
+            output_arquivo = ler_docx(upload_arquivo)
 
-        if texto is not None:
-          with st.spinner('Lendo o texo...'):
+        if upload_arquivo.type == 'text/plain':
+          with st.spinner('👀 Lendo o TXT...'):
             time.sleep(1.5)
-          with st.spinner('Anotando os pontos principais...'):
-            time.sleep(2)
-          with st.spinner('Resumindo...'):
-            st.toast('Lembre-se, textos extensos levam mais tempos para serem resumidos!', icon='⚠️')
-            resposta_texto = resume_texto(texto = texto)
+            output_arquivo = ler_txt(upload_arquivo)
+
+        if upload_arquivo.type == 'image/png' or upload_arquivo.type == 'image/jpeg':
+          with st.spinner('👀 Lendo a imagem...'):
+            time.sleep(1.5)
+            output_arquivo = ler_imagem(upload_arquivo)
+        
+      elif upload_arquivo_texto != "":
+        with st.spinner('👀 Lendo o texto...'):
+          time.sleep(1.5)
+          output_arquivo = upload_arquivo_texto
+      else:
+        st.write("✋ Calma aí! Envie-me algo para resumir.")
+        
+      
+      if upload_arquivo is not None:
+        if upload_arquivo.type == 'image/png' or upload_arquivo.type == 'image/jpeg':
+          with st.spinner('📝 Resumindo...'):
+            time.sleep(1.5)
+            resposta = resumir_imagem(output_arquivo)
+            st.toast('Resumo gerado com sucesso!', icon="✅")
+            st.divider()
+            st.write(resposta)
+            st.divider()
+
+        if output_arquivo != "":
+          if upload_arquivo.type != 'image/png' or upload_arquivo.type == 'image/jpeg':
+            with st.spinner('📝 Resumindo...'):
+              time.sleep(1.5)
+              resposta = resumir_texto(output_arquivo)
+              st.toast('Resumo gerado com sucesso!', icon="✅")
+              st.divider()
+              st.write(resposta)
+              st.divider()
+          
+      if upload_arquivo_texto != "":
+        with st.spinner('📝 Resumindo...'):
+          time.sleep(1.5)
+          resposta = resumir_texto(output_arquivo)
+          st.toast('Resumo gerado com sucesso!', icon="✅")
           st.divider()
-          st.write(resposta_texto)
+          st.write(resposta)
           st.divider()
+      
     else:
       st.markdown("❌ Vish, deu ruim! parece que sua chave não funcionou.")
 
-  on = st.toggle("Mostrar parâmetros da IA. (Personalizável no futuro)")
+  on = st.toggle("Mostrar parâmetros da IA.")
 
   if on:
     st.caption("Temperatura")
-    st.slider("", 0.0, 1.0, 0.2, disabled=True)
-    st.caption("Top P")
     st.slider("", 0.0, 1.0, 1.0, disabled=True)
+    st.caption("Top P")
+    st.slider("", 0, 1, 1, disabled=True)
     st.caption("Top K")
-    st.slider("", 0.0, 50.0, 0.0, disabled=True)
+    st.slider("", 0, 50, 0, disabled=True)
     st.markdown("Para saber mais sobre parâmetros de IA, acesse [aqui!](https://cloud.google.com/vertex-ai/generative-ai/docs/text/test-text-prompts?hl=pt-br#generative-ai-test-text-prompt-python_vertex_ai_sdk)")
 
   st.caption("Versão: 0.3")
