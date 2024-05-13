@@ -118,6 +118,7 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
   - Trabalhar com entradas de **vídeos**, **áudios**, **planilhas**, entre outros.
   - Personalizar parâmetros de IA, como: **Temperatura**, **Top P** e **Top K**.
   - Seleção de **modelos** de resumos.
+  - Módulo **Resume AI *for developers***, um módulo em que será possível trabalhar com **linguagens de programação**.
   
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
   
