@@ -144,7 +144,7 @@ def main():
   with tab_for_developers:
 
     st.title("Resume AI 👩‍💻 :red[*for developers*]")
-    st.write("Estará disponpivel na versão 1.0!")
+    st.write("Este módulo estará disponível na versão 1.0!")
 
     if st.button("🤿 Clique aqui!", type='primary'):
       with st.spinner('🔨 Este módulo ainda está em construção...'):
