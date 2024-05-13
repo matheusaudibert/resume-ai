@@ -117,6 +117,7 @@ def main():
           resposta = resumir_texto(output_arquivo)
           st.toast('Resumo gerado com sucesso!', icon="✅")
           st.divider()
+          st.write("Imagem:")
           st.write(resposta)
           st.divider()
       
