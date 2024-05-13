@@ -98,6 +98,7 @@ def main():
             st.toast('Resumo gerado com sucesso!', icon="✅")
             st.divider()
             st.write(resposta)
+            st.image(output_arquivo, width=250)
             st.divider()
 
         if output_arquivo != "":
