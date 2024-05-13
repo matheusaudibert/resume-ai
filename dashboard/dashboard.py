@@ -23,7 +23,7 @@ def main():
 
         #### Recursos:
 
-        - 📦 **Upload Simples** Os usuários podem enviar arquivos (PDF) ou textos para análise. 
+        - 📦 **Upload Simples** Os usuários podem enviar imagens, documentos PDFs, DOCX, TXT ou até mesmo digitar seu próprio texto. 
         - 💡 **Resumos Instantâneos:** O **Resume AI** alidado à IA generativa do Google permite aos usuários gerarem resumos precisos e quase instaneamente do conteúdo fornecido.
         - 😃 **Visualização Amigável**: Explore seus resumos de forma organizada e fácil de entender.
         - 📲 **Acesso em Qualquer Lugar**: Use nossa aplicação em qualquer dispositivo com acesso à internet.
