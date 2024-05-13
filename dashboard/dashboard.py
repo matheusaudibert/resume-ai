@@ -99,7 +99,7 @@ def main():
             st.divider()
             st.write(resposta)
             st.write("Imagem:")
-            st.image(output_arquivo, width=250)
+            st.image(output_arquivo, width=300)
             st.divider()
 
         if output_arquivo != "":
