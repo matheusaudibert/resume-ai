@@ -67,7 +67,7 @@ Você deve inserir sua chave da API do Google Gemini para se conectar.
 1. **Clone o repositório**:
 
 ```bash
-https://github.com/matheusaudibert/resume_ai.git
+git clone https://github.com/matheusaudibert/resume_ai.git
 ```
 
 2. **Instale as dependências:**
