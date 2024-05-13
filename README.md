@@ -6,7 +6,7 @@ O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência 
 
 ## Recursos:
 
--  📦 **Upload Simples:** Os usuários podem enviar arquivos (PDFs).
+-  📦 **Upload Simples:** Os usuários podem enviar imagens, documentos ou até mesmo digitar seu próprio texto.
   
 - 💡 **Resumos Instantâneos:** A IA do Google Generative permite gerar resumos precisos e rápidos do conteúdo fornecido.
   
