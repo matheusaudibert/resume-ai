@@ -6,13 +6,13 @@ O **Resume AI** é uma ferramenta que utiliza a inteligência artificial do Goog
 
 ## Recursos:
 
--  📦 **Upload Simples:** Os usuários podem enviar **imagens** (png, jpg ou jpeg), **documentos** (pdf, docx ou txt) ou até mesmo **digitar seu próprio texto**.
+-  📦 **Upload Simples:** Os usuários podem enviar imagens (png, jpg ou jpeg), documentos (pdf, docx ou txt) ou até mesmo digitar seu próprio texto.
   
-- 💡 **Resumos Instantâneos:** O **Resume AI** alidado à **inteligência artificial generativa do Google** permite aos usuários gerarem **resumos precisos e instantâneos** do conteúdo fornecido.
+- 💡 **Resumos Instantâneos:** O Resume AI alidado à inteligência artificial generativa do Google permite aos usuários gerarem resumos precisos e instantâneos do conteúdo fornecido.
   
-- 😃 **Visualização Amigável:** Explore seu resumo de forma **organizada e fácil de entender**.
+- 😃 **Visualização Amigável:** Explore seu resumo de forma organizada e fácil de entender.
   
-- 📲 **Acesso em Qualquer Lugar:** Use a aplicação em **qualquer dispositivo com acesso à internet**.
+- 📲 **Acesso em Qualquer Lugar:** Use a aplicação em qualquer dispositivo com acesso à internet.
 
 ## Benefícios
 
