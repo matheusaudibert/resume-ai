@@ -14,25 +14,28 @@ def main():
 
   with st.sidebar:
 
-        st.markdown("""
-        ### Bem-vindo ao **Resume AI**! ✅
+    st.markdown(
+    """
+    ### Bem-vindo ao **Resume AI**! 🎈
 
-        🤖 O **Resume AI** é uma ferramenta inovadora para resumir conteúdos de forma simples e eficaz.  Esta plataforma utiliza a IA generativa do Google 
-        para extrair insights valiosos de imagens, documentos e textos.  Os usuários podem enviar os arquivos e obter resumos instantâneos, facilitando 
-        o acesso rápido a informações importantes.
+    🤖 O **Resume AI** é uma ferramenta inovadora para resumir conteúdos de forma simples e eficaz.  Esta plataforma utiliza a IA generativa do Google 
+    para extrair insights valiosos de imagens, documentos e textos.  Os usuários podem enviar os arquivos e obter resumos instantâneos, facilitando 
+    o acesso rápido a informações importantes.
 
-        #### Recursos:
+    #### Recursos:
 
-        - 📦 **Upload Simples:** Os usuários podem enviar imagens (png, jpg ou jpeg), documentos (pdf, docx ou txt) ou até mesmo digitar seu próprio texto. 
-        - 💡 **Resumos Instantâneos:** O Resume AI alidado à inteligência artificial generativa do Google permite aos usuários gerarem resumos precisos e instantâneos do conteúdo fornecido.
-        - 😃 **Visualização Amigável:** Explore seu resumo de forma organizada e fácil de entender.
-        - 📲 **Acesso em Qualquer Lugar:** Use a aplicação em qualquer dispositivo com acesso à internet.
+    - 📦 **Upload Simples:** Os usuários podem enviar imagens (png, jpg ou jpeg), documentos (pdf, docx ou txt) ou até mesmo digitar seu próprio texto. 
+    - 💡 **Resumos Instantâneos:** O Resume AI alidado à inteligência artificial generativa do Google permite aos usuários gerarem resumos precisos e instantâneos do conteúdo fornecido.
+    - 😃 **Visualização Amigável:** Explore seu resumo de forma organizada e fácil de entender.
+    - 📲 **Acesso em Qualquer Lugar:** Use a aplicação em qualquer dispositivo com acesso à internet.
 
-        Junte-se ao **Resume AI** e libere o poder da inteligência artificial para acessar conhecimentos valiosos de forma instantânea. A revolução da informação começa aqui! 🌐🤿
+    Junte-se ao **Resume AI** e libere o poder da inteligência artificial para acessar conhecimentos valiosos de forma instantânea. A revolução da informação começa aqui! 🌐🤿
 
-        ##### Feito por: Matheus Audibert 👨‍💻
-        ##### Github: [github.com/matheusaudibert](github.com/matheusaudibert) 😼
-        """)
+    🚨 Em breve, o módulo :red[*for developers*] estará disponível. Neste módulo será possível enviar arquivos com extensões de linguagens de programação (.py, .js, .c, etc) 
+
+    ##### Feito :por: Matheus Audibert 👨‍💻
+    ##### Github [github.com/matheusaudibert](github.com/matheusaudibert) 😼
+    """)
 
   tab_padrao, tab_for_developers = st.tabs(["Padrão", "for developers"])
 
