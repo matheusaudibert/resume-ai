@@ -40,6 +40,7 @@ def resumir_texto(output_arquivo):
   resposta = model.generate_content(["""
    Leia todos o conteúdo do texto fornecido.\n
    Determine qual é o assunto geral do documento e resuma-o.\n
+   Todo o conteúdo que você deve gerar deve ser em formato de texto.\n
    Sintetize as informações em uma sinopse bem formatada e fácil de ler, estruturada como um ensaio que as resume de forma coesa.\n
    Não simplesmente parafraseie o texto fornecido.\n
    Não copie a estrutura do texto fornecido.\n
