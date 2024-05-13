@@ -95,7 +95,7 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 1. **O Resume AI recebe um input do usuário**: O usuário entra com algum conteúdo que deseja receber o resumo. Documento PDF ou texto.
 - No exemplo, é dado um arquivo PDF chamadado Exemplo_Conto. Este arquivo contém um texto fictício sobre um garoto chamado Matheus e sua paixão pela tecnologia. Você poder acessar esse documento [aqui.](https://github.com/matheusaudibert/resume_ai/blob/main/docs/exemplo_conto.pdf)
    
-   ![Logo](docs/input.png)
+   ![Logo](docs/inputd.png)
 
 3. **Recebe a API KEY do usuário 🔑**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
 - Em seguida, é informada uma API KEY, para se conectar com os servidores do Google.
