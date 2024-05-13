@@ -97,17 +97,17 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
    
    ![Logo](docs/input.png)
 
-3. **Recebe a API KEY do usuário 🔑**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
+2. **Recebe a API KEY do usuário 🔑**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
 - Em seguida, é informada uma API KEY, para se conectar com os servidores do Google.
    
    ![Logo](docs/key.png)
    
-5. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir.
+3. **A Inteligência Artificial gera o resumo**: A IA, que foi previamente alimentada com prompts técnicos, entrega o resumo do arquivo que o usuário envio para resumir.
 - O resumo do arquivo PDF chamado Exemplo_PDF é gerado para o usuário.
    
    ![Logo](docs/output.png)
 
-7. **É possível visualizar os parâmetros da IA**: Os parâmetros que constituem os modelos de geração de respostas da IA são apresentados ao usuário.
+4. **É possível visualizar os parâmetros da IA**: Os parâmetros que constituem os modelos de geração de respostas da IA são apresentados ao usuário.
 - Esses parâmetros são apenas visuais e informam os valores dos parâmetros de Temperatura, Top P e Top K, que estão sendo utilizados pela inteligência artificial.
 
    ![Logo](docs/parameters.png)
