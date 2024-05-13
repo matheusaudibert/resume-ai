@@ -101,7 +101,7 @@ def main():
             st.divider()
 
         if output_arquivo != "":
-          if upload_arquivo.type != 'image/png' or upload_arquivo.type != 'image/jpeg':
+          if upload_arquivo.type != 'image/png' and upload_arquivo.type != 'image/jpeg':
             with st.spinner('📝 Resumindo...'):
               time.sleep(1.5)
               resposta = resumir_texto(output_arquivo)
