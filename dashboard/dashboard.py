@@ -110,7 +110,7 @@ def main():
               st.write(resposta)
               st.divider()
           
-      if upload_arquivo_texto != "":
+      if upload_arquivo_texto != "" and upload_arquivo is not  None:
         with st.spinner('📝 Resumindo...'):
           time.sleep(1.5)
           resposta = resumir_texto(output_arquivo)
