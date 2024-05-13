@@ -18,7 +18,7 @@ def main():
         ### Bem-vindo ao **Resume AI**! ✅
 
         🤖 O **Resume AI** é uma ferramenta inovadora para resumir conteúdos de forma simples e eficaz.  Esta plataforma utiliza a IA generativa do Google 
-        para extrair insights valiosos de textos e documentos em PDF.  Os usuários podem enviar os arquivos e obter resumos instantâneos, facilitando 
+        para extrair insights valiosos de imagens, documentos e textos.  Os usuários podem enviar os arquivos e obter resumos instantâneos, facilitando 
         o acesso rápido a informações importantes.
 
         #### Recursos:
