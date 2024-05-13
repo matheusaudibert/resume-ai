@@ -1,8 +1,8 @@
-import streamlit as st #Importa a biblioteca do STREAMLIT
-import google.generativeai as genai #Importa a biblioteca da GOOGLE.GENERATIVEAI
-import PyPDF2 #Importa a biblioteca do PYPDF2
-import PIL #Importa a biblioteca Pillow
-import docx2txt #Importa a biblioteca 
+import streamlit as st
+import google.generativeai as genai
+import PyPDF2
+import PIL
+import docx2txt
  
 
 def verifica_chave(chave_temp):
