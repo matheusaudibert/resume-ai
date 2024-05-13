@@ -2,3 +2,4 @@ docx2txt==0.8
 Pillow==10.3.0
 PyPDF2==3.0.1
 streamlit==1.34.0
+google-generativeai==0.5.2
