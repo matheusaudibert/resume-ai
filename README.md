@@ -8,11 +8,11 @@ O **Resume AI** é uma ferramenta que utiliza a inteligência artificial do Goog
 
 -  📦 **Upload Simples:** Os usuários podem enviar **imagens** (png, jpg ou jpeg), **documentos** (pdf, docx ou txt) ou até mesmo **digitar seu próprio texto**.
   
-- 💡 **Resumos Instantâneos:** O **Resume AI** alidado à inteligência artificial generativa do Google permite aos usuários gerarem resumos precisos e instantâneos do conteúdo fornecido
+- 💡 **Resumos Instantâneos:** O **Resume AI** alidado à **inteligência artificial generativa do Google** permite aos usuários gerarem **resumos precisos e instantâneos** do conteúdo fornecido.
   
 - 😃 **Visualização Amigável**: Explore seu resumo de forma **organizada e fácil de entender**.
   
-- 📲 **Acesso em Qualquer Lugar**: Use a aplicação em qualquer dispositivo com acesso à internet.
+- 📲 **Acesso em Qualquer Lugar**: Use a aplicação em **qualquer dispositivo com acesso à internet**.
 
 ## Benefícios
 
@@ -123,7 +123,7 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
   
 - A documentação do código será feita em breve.
   
-- A **validação da chave API** é feita de maneira trágica. Ainda estou estudando a melhor maneira de validar a chave.
+- A **validação da chave API** é feita de maneira trágica. Ainda estou estudando a melhor maneira de validar a chave. Na **versão 0.8** ja terei desenvolvido uma solução.
 
 ## Contato
 
