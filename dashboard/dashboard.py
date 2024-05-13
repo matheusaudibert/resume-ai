@@ -134,7 +134,7 @@ def main():
     st.markdown("Para saber como os parâmetros funcionam, clique [aqui!](https://cloud.google.com/vertex-ai/generative-ai/docs/text/test-text-prompts?hl=pt-br#generative-ai-test-text-prompt-python_vertex_ai_sdk)")
 
   st.caption("Versão: 0.7")
-  st.markdown("""Repositório do projeto no [Github](github.com/matheusaudibert/resume_ai)""")
+  st.markdown("""Repositório do projeto no [Github.](github.com/matheusaudibert/resume_ai)""")
       
 if __name__ == "__main__":
     main()
