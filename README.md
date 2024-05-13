@@ -1,6 +1,6 @@
 # Resume AI ✍️: Resumos Automáticos com Inteligência Artificial (Google Gemini)
 
-O **Resume AI** é uma ferramenta que utiliza a API do Google e a inteligência artificial para gerar resumos automáticos a partir de textos e documentos. **Versão: 0.3**
+O **Resume AI** é uma ferramenta que utiliza a inteligência artificial do Google para gerar resumos automáticos a partir de imagens, documentos e textos. **Versão: 0.7**
 
 ![Logo](docs/app.png)
 
