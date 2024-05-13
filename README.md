@@ -2,7 +2,7 @@
 
 O **Resume AI** é uma ferramenta que utiliza a inteligência artificial do Google para gerar resumos automáticos a partir de imagens, documentos e textos. **Versão: 0.7**
 
-![Logo](docs/app.png)
+![Logo](docs/interface.png)
 
 ## Recursos:
 
@@ -95,7 +95,7 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 1. **O Resume AI recebe um input do usuário**: O usuário entra com algum conteúdo que deseja receber o resumo. Documento PDF ou texto.
 - No exemplo, é dado um arquivo PDF chamadado Exemplo_Conto. Este arquivo contém um texto fictício sobre um garoto chamado Matheus e sua paixão pela tecnologia. Você poder acessar esse documento [aqui.](https://github.com/matheusaudibert/resume_ai/blob/main/docs/exemplo_conto.pdf)
    
-   ![Logo](docs/input.png)
+   ![Logo](docs/inputd.png)
 
 3. **Recebe a API KEY do usuário 🔑**: Desta maneira o **Resume AI** consegue se conectar com o Google AI Studio.
 - Em seguida, é informada uma API KEY, para se conectar com os servidores do Google.
@@ -115,13 +115,15 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 ## Observações
 
 - O **Resume AI** está em processo de desenvolvimento. Futuramente sugirão novas funcionalidades, como: 
-  - Trabalhar com entradas de **imagens**, **vídeos**, **áudios**, **planilhas**, **códigos**, entre outros.
-  - Parâmetros de IA personalizados, como: **Temperatura**, **Top P** e **Top K**.
+  - Trabalhar com entradas de **vídeos**, **áudios**, **planilhas**, entre outros.
+  - Personalizar parâmetros de IA, como: **Temperatura**, **Top P** e **Top K**.
   - Seleção de **modelos** de resumos.
   
 - Se encontrar algum bug, por favor, envie um relatório de bug no repositório do GitHub.
   
 - A documentação do código será feita em breve.
+  
+- A **validação da chave API** é feita de maneira trágica. Ainda estou estudando a melhor maneira de validar a chave.
 
 ## Contato
 
