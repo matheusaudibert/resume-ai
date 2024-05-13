@@ -33,7 +33,7 @@ def main():
 
     🚨 Em breve, o módulo :red[*for developers*] estará disponível. Neste módulo será possível enviar arquivos com extensões de linguagens de programação (.py, .js, .c, etc) 
 
-    ##### Feito :por: Matheus Audibert 👨‍💻
+    ##### Feito por: Matheus Audibert 👨‍💻
     ##### Github [github.com/matheusaudibert](github.com/matheusaudibert) 😼
     """)
 
