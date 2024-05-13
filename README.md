@@ -110,7 +110,7 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 4. **É possível visualizar os parâmetros da IA**: Os parâmetros que constituem os modelos de geração de respostas da IA são apresentados ao usuário.
 - Esses parâmetros são apenas visuais e informam os valores dos parâmetros de Temperatura, Top P e Top K, que estão sendo utilizados pela inteligência artificial.
 
-   ![Logo](docs/parameter1s.png)
+   ![Logo](docs/parameters.png)
 
 ## Observações
 
