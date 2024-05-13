@@ -40,9 +40,9 @@ O **Resume AI** é uma ferramenta que utiliza a inteligência artificial do Goog
 
 **Resume AI** - [https://resumeia.streamlit.app](https://resumeia.streamlit.app)
 
-2. **Cole sua API KEY 🔑**
+2. **Cole sua API KEY 🔑.**
 
-Você deve inserir sua chave da API do Google AI studio para se conectar.
+Você deve inserir sua chave da API do Google Gemini para se conectar.
 
 **Não tem chave?** Gere uma [aqui!](https://aistudio.google.com/app/apikey)
 
@@ -87,7 +87,7 @@ streamlit run .\dashboard.py
 
 2. **URL Local**:
 ```bash
-A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole-a no em seu navegador.
+A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole-a em seu navegador.
 ```
 
 ## Como funciona
