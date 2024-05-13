@@ -23,10 +23,10 @@ def main():
 
         #### Recursos:
 
-        - 📦 **Upload Simples** Os usuários podem enviar imagens, documentos PDFs, DOCX, TXT ou até mesmo digitar seu próprio texto. 
-        - 💡 **Resumos Instantâneos:** O **Resume AI** alidado à inteligência artificial generativa do Google permite aos usuários gerarem resumos precisos e instantâneos do conteúdo fornecido.
-        - 😃 **Visualização Amigável**: Explore seu resumo de forma organizada e fácil de entender.
-        - 📲 **Acesso em Qualquer Lugar**: Use a aplicação em qualquer dispositivo com acesso à internet.
+        - 📦 **Upload Simples** Os usuários podem enviar **imagens** (png, jpg ou jpeg), **documentos** (pdf, docx ou txt) ou até mesmo **digitar seu próprio texto**. 
+        - 💡 **Resumos Instantâneos:** O **Resume AI** alidado à **inteligência artificial generativa do Google** permite aos usuários gerarem **resumos precisos e instantâneos** do conteúdo fornecido.
+        - 😃 **Visualização Amigável**: Explore seu resumo de forma **organizada e fácil de entender**.
+        - 📲 **Acesso em Qualquer Lugar**: Use a aplicação em **qualquer dispositivo com acesso à internet**.
 
         Junte-se ao **Resume AI** e libere o poder da inteligência artificial para acessar conhecimentos valiosos de forma instantânea. A revolução da informação começa aqui! 🌐🤿
 
