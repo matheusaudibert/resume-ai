@@ -30,7 +30,7 @@ O **Resume AI** é uma ferramenta que utiliza a inteligência artificial do Goog
 
 4. [Como funciona](#como-funciona)
 
-5. [Observações](#observaçõess)
+5. [Observações](#observações)
 
 6. [Contato](#contato)
 
