@@ -131,5 +131,4 @@ A execução deste código acima irá retonar a URL Local (localhost:XXXX). Cole
 Para obter mais informações sobre o Resumi AI ou me conhecer, você pode entrar em contato comigo através dos seguintes canais:
 
 - **Email:** matheusaudibert2019@outlook.com
-- **Discord:** hvmex
 
